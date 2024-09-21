@@ -18,9 +18,7 @@
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
 }
-section {
- /* padding: 4rem; */
-}
+
 .content {
   margin: 10rem 0;
 }
@@ -72,6 +70,14 @@ header {
   padding: 2rem 1.5rem;
   margin-bottom: 1rem;
   background-color: white;
+  position: fixed; /* Change to fixed positioning */
+  width: 100%; /* Ensure full width */
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Keep it above other content */
+}
+
+body {
+  padding-top: 6rem; /* Add padding equal to navbar height */
 }
 
 .logo h1 {
@@ -108,7 +114,7 @@ header {
 
 /* Dropdown Styles */
 .dropdown {
-  position: relative;
+  position: relative; /* Keep dropdown position relative */
 }
 
 .dropdown-content {
@@ -118,7 +124,7 @@ header {
   min-width: 230px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  top: 100%;
+  top: 100%; /* Align under the dropdown trigger */
   left: 0;
 }
 
@@ -160,7 +166,6 @@ header {
   display: none;
 }
 
-
 /* Media Query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   /* Navbar hidden initially */
@@ -176,7 +181,7 @@ header {
       display: block;
       position: absolute;
       right: 1rem;
-      top: 2.30rem; /* Adjusted top position for better alignment */
+      top: 2.30rem; 
       color: var(--text-color);
       font-size: 1.8rem;
       cursor: pointer;
@@ -212,6 +217,7 @@ header {
       background-color: #f0f0f0; /* Light background on hover */
   }
 }
+
 
 
 .main-content {
@@ -261,13 +267,15 @@ header {
     padding: 2rem 1rem; /* Reduced padding on smaller screens */
   }
 
-  .text-section {
-    margin-right: 0;
-    margin-bottom: 2rem;
+  /* Move image section above text section on mobile */
+  .image-section {
+    order: -1; /* Set order to -1 to appear first */
+    max-width: 100%;
+    margin-bottom: 1.5rem; /* Add some space below the image */
   }
 
-  .image-section {
-    max-width: 100%;
+  .text-section {
+    margin-right: 0;
   }
 
   .title {
@@ -291,6 +299,7 @@ header {
     padding: 0.8rem 1.5rem; /* Slightly smaller button on mobile */
   }
 }
+
 
 @media (max-width: 480px) {
   .title {
@@ -403,8 +412,6 @@ header {
   transition: color 0.3s ease;
 }
 
-.working-paper a:hover {
-}
 
 .teaching-info {
   max-width: 1300px;
@@ -458,9 +465,6 @@ header {
 .committee-member a {
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.committee-member a:hover {
 }
 
 .contact {
