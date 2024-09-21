@@ -62,7 +62,7 @@ main {
   font-family: var(--font-stack);
   color: var(--text-color);
   background-color: var(--background-light);
-  padding: 5rem 2rem; /* Adjusted padding for mobile */
+  padding: 5rem 10rem; /* Adjusted padding for mobile */
 }
 /* General header styles */
 header {
