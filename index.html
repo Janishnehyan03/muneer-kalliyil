@@ -65,6 +65,15 @@
         x.className = "navbar";
       }
     }
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        const offset = 120; // Adjust according to your header height
+        const targetPosition = target.getBoundingClientRect().top - offset;
+        window.scrollBy({ top: targetPosition, behavior: "smooth" });
+      });
+    });
   </script>
 
   <body>
@@ -91,7 +100,7 @@
         </div>
       </section>
 
-      <div id="education" class="working-paper content">
+      <section id="education" class="working-paper content">
         <h1 class="title">Education</h1>
         <ul class="list-disc pl-5" style="list-style: disc">
           <li>
@@ -134,7 +143,7 @@
             </p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <div class="" id="education" style="margin-bottom: 7rem">
         <h1 class="title">Research Interests</h1>
