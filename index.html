@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <div class="logo">
+      <h1>Muneer Kalliyil</h1>
+    </div>
+    <nav class="navbar" id="myTopnav">
+      <ul class="nav-links">
+        <li><a href="#education">Education</a></li>
+  
+        <!-- Research with Dropdown -->
+        <li class="dropdown">
+          <a href="#">Research</a>
+          <ul class="dropdown-content">
+            <li><a href="#working-paper">Working Papers</a></li>
+            <li><a href="#ongoing-projects">Ongoing Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#presentations">Seminar Presentations</a></li>
+            <li><a href="#fellowships">Fellowships</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="#achievements">CV</a></li>
+  
+        <!-- More with Dropdown -->
+        <li class="dropdown">
+          <a>More</a>
+          <ul class="dropdown-content">
+            <li><a href="#teaching-experiences">Teaching Experiences</a></li>
+            <li><a href="#professional-experiences">Professional Experiences</a></li>
+            <li><a href="#relevant-skills">Relevant Skills</a></li>
+            <li><a href="#references">References</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="contact-btn">Contact Me</a></li>
+      </ul>
+      <!-- FontAwesome hamburger icon -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+  
+  <body>
+    <main>
+      <section class="main-content">
+        <!-- Text Section -->
+        <div class="text-section">
+          <!-- <h2>Muneer Kalliyil</h2> -->
+          <p>
+            I am a doctoral candidate in the economics department at the Indian
+            Institute of Management (IIM) Bangalore, India. In 2022-2023, I was
+            selected for a DAAD-funded PhD Exchange Program in Germany. Before
+            joining IIM Bangalore, I worked as a Research Fellow at UNICEF
+            India. I obtained an MPhil degree in Planning and Development from
+            the Indian Institute of Technology (IIT) Bombay and a Masters in
+            Economics from JMI, Delhi. My research interest lies in Economics of
+            Education, Political Economy, and Development Economics.
+          </p>
+        </div>
+
+        <!-- Profile Picture Section -->
+        <div class="image-section">
+          <img src="/images/profile.jpg" alt="Profile Picture" />
+        </div>
+      </section>
+<!-- 
+      <section id="education" class="content">
+        <h1 class="title">Education</h1>
+        <ul class="list-disc pl-5" style="list-style: disc">
+          <li>
+            <p>
+              <strong style="font-weight: normal">
+                2019 - Present: Indian Institute of Management Bangalore,
+                Doctoral Program, Economics Area
+              </strong>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal">
+                2022 - 2023: University of Göttingen, Germany, DAAD PhD Exchange
+                Fellow, Centre for Modern Indian Studies
+              </strong>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal">
+                2016 - 2018: Indian Institute of Technology Bombay, Master of
+                Philosophy (MPhil) in Planning and Development
+              </strong>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal">
+                2014 - 2016: Jamia Millia Islamia, New Delhi, Master of Arts
+                (MA) in Economics
+              </strong>
+            </p>
+          </li>
+        </ul>
+      </section> -->
+
+      <div id="presentations" class="working-paper content">
+        <h1 class="title">Education</h1>
+        <ul class="list-disc pl-5" style="list-style: disc">
+          <li>
+            <p>
+              <strong style="font-weight: normal;font-size: 20px;">
+                <b> Indian Institute of Management Bangalore, 2019 - Present</b>
+                <br>Doctoral Program, Economics Area
+              </strong>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal;font-size: 20px;"></strong>
+                <b>
+
+                  University of Göttingen, Germany,  2022 - 2023 
+                </b>
+                <br>
+                   DAAD PhD Exchange
+                  Fellow,
+                Centre for Modern Indian Studies</strong
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal;font-size: 20px;">
+                 <b>Indian Institute of Technology Bombay,2016 - 2018</b> <br>
+                  Master of
+                Philosophy (MPhil) in Planning and Development</strong
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong style="font-weight: normal;font-size: 20px;">
+               <b> Jamia Millia Islamia, New Delhi, 2014 - 2016</b> <br>
+                 Master of Arts
+                (MA) in Economics</strong
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="" id="education" style="margin-bottom: 7rem">
+        <h1 class="title">Research Interests</h1>
+        <p style="text-align: center; font-size: 20px">
+          Economics of Education, Political Economy, Development Economics
+        </p>
+      </div>
+      <section class="research-section" id="research">
+        <h1 class="title">Research</h1>
+        <div id="working-paper" class="working-paper">
+          <h3 class="section-title left-align">Working Papers</h3>
+          <ul class="list-disc pl-5">
+            <li>
+              <p>
+                <strong
+                  >The Political Economy of Privatization of Education: Role of
+                  Local Politicians in India (with Soham Sahoo)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This paper investigates the role of political favouritism in
+                  the private education market. Using a close election
+                  regression discontinuity design, we estimate the causal effect
+                  of having a ruling party aligned politician on the growth of
+                  private educational institutions in India. We utilize
+                  constituency-level panel data on private and government
+                  educational institutions matched with the electoral outcomes
+                  of all state assembly elections held between 2005 and 2016. We
+                  find that constituencies represented by politicians aligned
+                  with the state ruling party have a higher growth rate in the
+                  number of private schools compared to those with non-aligned
+                  representatives. However, we do not observe any significant
+                  effect on the growth rate of government schools. Similar
+                  patterns are also found for higher education institutions. Our
+                  analysis suggests that the driving mechanism behind this
+                  phenomenon may lie in political influence over bureaucratic
+                  processes and discrepancies in the enforcement of government
+                  regulations. Furthermore, our result shows that these private
+                  schools may not necessarily offer better quality education.
+                </em>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>
+                  Does Restricting Access to Credit Impact Learning Outcomes?
+                  Evidence from a Regulatory Ban on Microfinance in India (with
+                  Soham Sahoo)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This study examines how restricted access to microfinance by
+                  households affects children’s learning outcomes, utilizing a
+                  unique natural experiment that halted all microfinance
+                  operations in Andhra Pradesh (AP), India, in 2010. The
+                  analysis exploits quasi-random variation in district-level
+                  exposure to the shock in states other than AP, as the
+                  regulation affected lenders’ liquidity nationwide. We use
+                  difference-in-differences and event study designs to identify
+                  the causal effects of the shock. The findings reveal a
+                  significant and persistent decline in children’s learning
+                  outcomes, likely driven by reduced household education
+                  expenditure, a shift from private to government schooling, and
+                  decreased food expenditure affecting nutrition. Contrary to
+                  expectations, the restoration of credit access does not fully
+                  reverse these effects, highlighting the long-term consequences
+                  of short-term financial disruptions. Additionally, the impacts
+                  vary by gender and age, highlighting the need for targeted
+                  recovery policies. By focusing on the effects of regulatory
+                  restrictions rather than microfinance service provision, this
+                  study complements existing literature and provides a more
+                  comprehensive understanding of the socioeconomic impacts of
+                  microfinance.
+                </em>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="ongoing-projects" class="working-paper">
+          <h3 class="section-title left-align">Ongoing Projects</h3>
+          <ul class="list-disc pl-5">
+            <li>
+              <p>
+                <strong
+                  >Empowering Communities to Improve Learning Outcomes: The Role
+                  of a Village-Based Math Contest (with Soham Sahoo and Arnab
+                  Mukherji)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  The project, in partnership with the Akshara Foundation,
+                  focuses on enhancing rural education by involving communities
+                  in advocating for better education. It will feature a “village
+                  math contest” organized by community members. The core
+                  objective is to engage community leaders and parents more
+                  actively, enabling them to hold teachers accountable for
+                  student academic performance. We will evaluate the program’s
+                  impact through a village-level randomized controlled trial
+                  (RCT), analyzing data on children’s math performance, anxiety,
+                  and non-cognitive skills, as well as teachers’ pedagogical
+                  practices, parental input, and community involvement in school
+                  governance.
+                </em>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong
+                  >The Influence of Teachers on the Caste Gap in English
+                  Language Education: Evidence Using Matched Student-Teacher
+                  Level Data from India (with Soham Sahoo and Pawandeep
+                  Kaur)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This study investigates the role of teachers in students’
+                  English learning using quantitative data from two states of
+                  India. We utilize a novel dataset that independently collected
+                  data on the learning outcomes of around 9000 students studying
+                  in class nine from 205 schools at the beginning and end of the
+                  school year. This matched student-teacher level dataset allows
+                  us to empirically investigate how various teacher-related
+                  factors contribute to students’ English learning,
+                  incorporating the caste of both students and teachers in the
+                  analysis.
+                </em>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong
+                  >Does School Closure Affect Educational Outcomes? (with
+                  Tejendra Pratap Singh and Soham Sahoo)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This study examines the impact of Jharkhand’s 2017-18 school
+                  consolidation policy, which led to the closure of many
+                  sub-standard government schools. Students were reassigned to
+                  nearby schools, and teachers were redistributed to maintain
+                  the student-teacher ratio. The study evaluates how these
+                  changes in classroom composition, student-teacher ratios, and
+                  school distances affect educational outcomes.
+                </em>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong
+                  >Impact of 50 Years of Floods on Human Capital Formation in
+                  India</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This study explores the impact of floods in India over the
+                  past 50 years on human capital formation, focusing on
+                  education and health. Unlike typical case studies, this study
+                  examines the cumulative effects of all floods experienced
+                  during early life stages, providing a comprehensive analysis
+                  of their impact on human capital development.
+                </em>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong
+                  >Impact of the Computerization of Public Distribution System
+                  on Household Consumption (with Tara Shankar Show and Conan
+                  Mukherjee)</strong
+                >
+              </p>
+              <p>
+                <em>
+                  This study examines the impact of supply chain computerization
+                  in Chhattisgarh’s Public Distribution System (PDS) on
+                  household cereal consumption and nutritional intake. The study
+                  finds that after computerization, households with Below
+                  Poverty Line (BPL) ration cards in Chhattisgarh bought more
+                  cereals from the PDS and less from the market, with no change
+                  in total cereal consumption.
+                </em>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="publications" class="working-paper">
+          <h3 class="section-title left-align">Publications</h3>
+          <ul class="list-disc pl-5">
+            <li>
+              <p>
+                <strong style="font-style: italic; font-weight: normal"
+                  >Regional Patterns and Dynamics of Learning Outcomes in India
+                  (with Srividya Aluru and Soham Sahoo) in Chatterjee, T.B.,
+                  Ghose, A., Roy, P. (eds) Risks and Resilience of Emerging
+                  Economies. India Studies in Business and Economics. Springer,
+                  Singapore (2023)</strong
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="presentations" class="working-paper content">
+          <h1 class="title">Conference / Seminar Presentations</h1>
+          <ul class="list-disc pl-5" style="list-style: disc">
+            <li>
+              <p>
+                <strong style="font-weight: normal">
+                  2024: Advanced Graduate Workshop, Azim Premji University and
+                  Institute for New Economic Thinking; NOVAFRICA Conference on
+                  Economic Development, Nova School of Business and Economics,
+                  Lisbon, Portugal; 4th Development Economic Conference, Lincoln
+                  International Business School, UK; Meeting Of Young Minds In
+                  Frontiers Of Economics, Institute for New Economic Thinking
+                  Conference, Indian Institute of Technology Bombay; Asia
+                  Meeting of Econometric Society, Indian Institute of Technology
+                  Delhi
+                </strong>
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >2023: 18th Annual Conference on Economic Growth and
+                  Development, Indian Statistical Institute Delhi; Winter
+                  School, Delhi School of Economics; CESP Golden Jubilee
+                  Conference, Jawaharlal Nehru University, New Delhi; Society
+                  for Economics Research in India (SERI)-Doctoral
+                  Conference</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >2018: 54th Annual Conference of The Indian Econometric
+                  Society (TIES)</strong
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="fellowships " class="working-paper content">
+          <h1 class="title">Grants & Fellowships</h1>
+          <ul class="list-disc pl-5" style="list-style: disc">
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >DAAD PhD Exchange Program Fellowship, 2022-2023</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >Doctoral Fellowship, IIM Bangalore, 2019-2024</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >UNICEF Research Fellowship, 2017-2019</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >IIT Bombay MPhil Fellowship, 2016-2017</strong
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong style="font-weight: normal"
+                  >University Grants Commission–Junior Research Fellowship
+                  (UGC–JRF), 2015 & 2016</strong
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="more">
+        <div class="teaching-info" id="teaching-experiences">
+          <div class="teaching-section">
+            <h1 class="title">Teaching Experiences</h1>
+            <h2 class="section-title">Teaching</h2>
+            <ul class="teaching-list">
+              <li>
+                Introduction to Managerial Economics (Foundations of Management,
+                IIM Bangalore), 2024
+              </li>
+              <li>
+                Introduction to STATA (PhD Preparatory Coursework, IIM
+                Bangalore), 2022 & 2024
+              </li>
+              <li>
+                Managerial Economics (Tutorial Instructor-PGP, IIM Bangalore),
+                2023
+              </li>
+              <li>
+                Understanding NSS and NFHS (CTARA & UNICEF Workshop, IIT
+                Bombay), 2021
+              </li>
+            </ul>
+          </div>
+
+          <div class="teaching-section">
+            <h2 class="section-title">Teaching Assistance</h2>
+            <ul class="teaching-assistance-list">
+              <li>Econometrics (PhD, IIM Bangalore), 2023</li>
+              <li>
+                Managerial Economics (PGP, EPGP, and PGPEM, IIM Bangalore), 2022
+                & 2023
+              </li>
+              <li>Macroeconomics (PGP, IIM Bangalore), 2021</li>
+              <li>Macroeconomics (PhD, IIM Bangalore), 2021</li>
+              <li>
+                Computer Aided Applied Statistics (MPhil, IIT Bombay), 2017
+              </li>
+            </ul>
+          </div>
+
+          <div class="teaching-section">
+            <h2 class="section-title">Teaching Interests</h2>
+            <ul class="teaching-interests-list">
+              <li>Education Economics</li>
+              <li>Econometrics</li>
+              <li>Statistics</li>
+              <li>Mathematical Economics</li>
+              <li>Microeconomics</li>
+              <li>Game Theory</li>
+            </ul>
+          </div>
+        </div>
+        <div class="teaching-info" id="professional-experiences">
+          <div class="teaching-section content">
+            <h1 class="title">Professional Experiences</h1>
+            <ul class="teaching-list">
+              <li>Unicef Research Fellow, Unicef India, 2018-2019</li>
+              <li>Department Placement Coordinator, IIT Bombay, 2017-2018</li>
+              <li>
+                Project Assistant, Dharavi Nutritional Improvement Program, Tata
+                Centre for Technology and Design, IIT Bombay, 2017
+              </li>
+              <li>
+                Business Consultant, Turkish Indian Chamber of Commerce and
+                Industry (TICCI), Hydrabad, 2015
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="teaching-info" id="relevant-skills">
+          <div class="teaching-section content">
+            <h1 class="title">Relevant Skills</h1>
+            <ul class="teaching-list">
+              <li style="padding-bottom: 1rem">
+                <b> Software Packages: </b>
+                STATA (Advanced), R (Basic), Python (Basic), SAS (Basic), MATLAB
+                (Basic), Eviews (Basic), SPSS (Basic), LaTeX (Advanced), QGIS
+                (Intermediate)
+              </li>
+              <li style="padding-bottom: 1rem">
+                <b>Data Experience:</b> Proficient in working with large-scale
+                secondary datasets, including NSS, NFHS (DHS), ASER, DISE,
+                AISHE, Young Lives, and Census India.
+              </li>
+              <li style="padding-bottom: 1rem">
+                <b> Languages:</b> English (Fluent), Malayalam (Native), Hindi
+                (Basic), Urdu (Intermediate), Arabic (Intermediate), Turkish
+                (Intermediate)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="dissertation-committee" id="references">
+        <h1 class="title">References</h1>
+        <div class="committee-member">
+          <h3>Dr. Soham Sahoo</h3>
+          <p>(Co-Chair, Dissertation Committee)</p>
+          <p>
+            Assistant Professor, Public Policy<br />Indian Institute of
+            Management Bangalore
+          </p>
+          <p>
+            <a href="mailto:soham.sahoo@iimb.ac.in">soham.sahoo@iimb.ac.in</a>
+          </p>
+        </div>
+        <div class="committee-member">
+          <h3>Dr. Ritwik Banerjee</h3>
+          <p>(Co-Chair, Dissertation Committee)</p>
+          <p>
+            Associate Professor, Economics<br />Indian Institute of Management
+            Bangalore
+          </p>
+          <p>
+            <a href="mailto:ritwikbanerjee@iimb.ac.in"
+              >ritwikbanerjee@iimb.ac.in</a
+            >
+          </p>
+        </div>
+        <div class="committee-member">
+          <h3>Dr. Kunal Dasgupta</h3>
+          <p>(Member, Dissertation Committee)</p>
+          <p>
+            Associate Professor, Economics<br />Indian Institute of Management
+            Bangalore
+          </p>
+          <p>
+            <a href="mailto:kunal.dasgupta@iimb.ac.in"
+              >kunal.dasgupta@iimb.ac.in</a
+            >
+          </p>
+        </div>
+      </section>
+      <div class="contact" id="contact">
+        <!-- <h1 class="title">Contact Me</h1> -->
+        <div class="contact-info">
+          <a href="mailto:muneer.kalliyil19@iimb.ac.in" class="email-link">
+            muneer.kalliyil19@iimb.ac.in
+          </a>
+          <div class="social-links">
+            <a href="https://twitter.com/muneer1200" class="social-icon" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muneer-kalliyil-65231b4a/" class="social-icon" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
