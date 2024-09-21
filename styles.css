@@ -17,6 +17,7 @@
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .content {
@@ -465,6 +466,7 @@ body {
 .committee-member a {
   text-decoration: none;
   transition: color 0.3s ease;
+  color: rgb(32, 31, 31);
 }
 
 .contact {
@@ -487,7 +489,7 @@ body {
 .email-link {
   display: block;
   font-size: 1.2em;
-  color: #001f3f;
+  color: #0d60b4;
   margin-bottom: 10px;
   text-decoration: none;
 }
