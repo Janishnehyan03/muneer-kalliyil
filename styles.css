@@ -15,7 +15,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -171,55 +171,53 @@ body {
 @media screen and (max-width: 600px) {
   /* Navbar hidden initially */
   .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 
   /* Hamburger icon for mobile */
   .icon {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 2.30rem; 
-      color: var(--text-color);
-      font-size: 1.8rem;
-      cursor: pointer;
-      z-index: 2; /* Ensure it's above other elements */
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2.3rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2; /* Ensure it's above other elements */
   }
 
   /* Show links when responsive navbar is active */
   .navbar.responsive .nav-links {
-      display: flex; /* Show links when navbar is active */
-      background-color: white; /* Background for better visibility */
-      position: absolute; /* Position to overlap content */
-      top: 100%; /* Align under the navbar */
-      left: 0; /* Align to the left */
-      z-index: 1; /* Keep it under the icon */
+    display: flex; /* Show links when navbar is active */
+    background-color: white; /* Background for better visibility */
+    position: absolute; /* Position to overlap content */
+    top: 100%; /* Align under the navbar */
+    left: 0; /* Align to the left */
+    z-index: 1; /* Keep it under the icon */
   }
 
   /* Adjusted padding inside list items for mobile */
   .navbar.responsive .nav-links li {
-      text-align: left;
-      padding: 0.75rem 1rem; /* Consistent padding for mobile view */
+    text-align: left;
+    padding: 0.75rem 1rem; /* Consistent padding for mobile view */
   }
 
   .navbar.responsive .nav-links li a {
-      display: block;
-      width: 100%;
-      padding: 0.75rem 1rem; /* Consistent padding for mobile view */
-      color: var(--text-color); /* Ensure text color is visible */
-      text-decoration: none; /* Remove underline */
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem; /* Consistent padding for mobile view */
+    color: var(--text-color); /* Ensure text color is visible */
+    text-decoration: none; /* Remove underline */
   }
 
   /* Optional: Add hover effect for links in mobile */
   .navbar.responsive .nav-links li a:hover {
-      background-color: #f0f0f0; /* Light background on hover */
+    background-color: #f0f0f0; /* Light background on hover */
   }
 }
-
-
 
 .main-content {
   display: flex;
@@ -300,7 +298,6 @@ body {
     padding: 0.8rem 1.5rem; /* Slightly smaller button on mobile */
   }
 }
-
 
 @media (max-width: 480px) {
   .title {
@@ -412,7 +409,6 @@ body {
   text-decoration: underline;
   transition: color 0.3s ease;
 }
-
 
 .teaching-info {
   max-width: 1300px;
@@ -582,5 +578,89 @@ body {
   }
   .contact .title {
     font-size: 2rem;
+  }
+}
+
+/* Footer styling */
+.footer {
+  background-color: #002147; /* Dark blue background */
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+/* Logo section */
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo a {
+ color: white;
+}
+
+/* Navigation section */
+.footer-nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-nav li {
+  margin: 0 15px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #ddd; /* Slight color change on hover */
+}
+
+/* Social media icons */
+.footer-social {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social a {
+  color: white;
+  margin-left: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ddd; /* Change icon color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav {
+    margin: 20px 0;
+  }
+
+  .footer-social {
+    justify-content: center;
   }
 }

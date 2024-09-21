@@ -56,26 +56,6 @@
     </a>
   </header>
 
-  <script>
-    function toggleNavbar() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        const offset = 120; // Adjust according to your header height
-        const targetPosition = target.getBoundingClientRect().top - offset;
-        window.scrollBy({ top: targetPosition, behavior: "smooth" });
-      });
-    });
-  </script>
-
   <body>
     <main>
       <section class="main-content">
@@ -599,4 +579,55 @@
       </div>
     </main>
   </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo Section -->
+      <div class="footer-logo">
+        <a href="/">
+          <h1>Muneer Kalliyil</h1>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="footer-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#working-paper">Working Papers</a></li>
+        <li><a href="#publications">Publications</a></li>
+      </ul>
+
+      <!-- Social Media Icons -->
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/muneer-kalliyil-65231b4a/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/muneer1200" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        const offset = 120; // Adjust according to your header height
+        const targetPosition = target.getBoundingClientRect().top - offset;
+        window.scrollBy({ top: targetPosition, behavior: "smooth" });
+      });
+    });
+  </script>
 </html>
