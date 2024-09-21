@@ -66,10 +66,10 @@ main {
 }
 /* General header styles */
 header {
-  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 2rem 1.5rem; /* Reduced padding for better fit */
+  padding: 2rem 1.5rem;
   margin-bottom: 1rem;
   background-color: white;
 }
@@ -77,23 +77,20 @@ header {
 .logo h1 {
   font-size: 2.5rem;
   color: var(--logo-color);
-  margin: 0; /* Removed bottom margin for better alignment */
+  margin: 0;
 }
 
 .navbar {
-  background-color: transparent;
-  padding: 0; /* Removed extra padding */
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem; /* Reduced gap between links */
-  padding: 0; /* No extra padding */
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0; /* Remove default margin */
 }
 
 .nav-links a {
@@ -101,7 +98,7 @@ header {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  padding: 0.75rem 1rem; /* Consistent padding around links */
+  padding: 0.75rem 1rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -118,7 +115,7 @@ header {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 230px; /* Adjusted width for better fit */
+  min-width: 230px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   top: 100%;
@@ -131,7 +128,7 @@ header {
 
 .dropdown-content a {
   color: black;
-  padding: 10px 16px; /* Consistent padding inside dropdown */
+  padding: 10px 16px;
   text-decoration: none;
   display: block;
 }
@@ -149,7 +146,7 @@ header {
 .contact-btn {
   background-color: var(--button-bg);
   color: white !important;
-  padding: 0.75rem 1.5rem; /* Reduced padding for better alignment */
+  padding: 0.75rem 1.5rem;
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }
@@ -163,44 +160,59 @@ header {
   display: none;
 }
 
+
 /* Media Query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   /* Navbar hidden initially */
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding: 0; /* Removed extra padding */
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
   }
 
   /* Hamburger icon for mobile */
   .icon {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1.25rem; /* Adjusted top position for better alignment */
-    color: var(--text-color);
-    font-size: 1.8rem;
-    cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 2.30rem; /* Adjusted top position for better alignment */
+      color: var(--text-color);
+      font-size: 1.8rem;
+      cursor: pointer;
+      z-index: 2; /* Ensure it's above other elements */
   }
 
   /* Show links when responsive navbar is active */
   .navbar.responsive .nav-links {
-    display: flex;
+      display: flex; /* Show links when navbar is active */
+      background-color: white; /* Background for better visibility */
+      position: absolute; /* Position to overlap content */
+      top: 100%; /* Align under the navbar */
+      left: 0; /* Align to the left */
+      z-index: 1; /* Keep it under the icon */
   }
 
   /* Adjusted padding inside list items for mobile */
   .navbar.responsive .nav-links li {
-    text-align: left;
-    padding: 0.75rem 0; /* Reduced padding for better fit on mobile */
+      text-align: left;
+      padding: 0.75rem 1rem; /* Consistent padding for mobile view */
   }
 
   .navbar.responsive .nav-links li a {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 1rem; /* Consistent padding for mobile view */
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem; /* Consistent padding for mobile view */
+      color: var(--text-color); /* Ensure text color is visible */
+      text-decoration: none; /* Remove underline */
+  }
+
+  /* Optional: Add hover effect for links in mobile */
+  .navbar.responsive .nav-links li a:hover {
+      background-color: #f0f0f0; /* Light background on hover */
   }
 }
+
 
 .main-content {
   display: flex;
