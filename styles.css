@@ -580,8 +580,6 @@ body {
     font-size: 2rem;
   }
 }
-
-/* Footer styling */
 .footer {
   background-color: #002147; /* Dark blue background */
   color: white;
@@ -665,7 +663,7 @@ body {
   }
 
   .footer-nav li {
-    margin: 10px 7px; /* Stack nav items vertically */
+    margin: 10px 0; /* Stack nav items vertically */
   }
 
   .footer-social {
